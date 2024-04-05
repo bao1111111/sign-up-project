@@ -1,20 +1,27 @@
+@font-face {
+     font-family: 'Norse';
+     src: url('assets/Norse-Bold.otf') format('opentype');
+ }
+
+
 body{display: flex;
      flex-direction: row;
 }
 
-.background{display: flexbox;
+.background{display: flex;
             flex-direction: column;
             flex:1;
             background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+            background-size: 100%;
+          
 }
 
-.content{display: flexbox;
+.content{display: flex;
          flex-direction: column;
          flex: 2;
 }
 
-.container{display: flex;
-           flex-direction: column;
-}
+.allinputs{display: flex;
+           flex-direction: column;                   }
 
 
