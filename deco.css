@@ -22,6 +22,30 @@ body{display: flex;
 }
 
 .allinputs{display: flex;
-           flex-direction: column;                   }
+           flex-direction: column;         
+                   }
 
 
+.sole-input{display: flex;
+           flex-direction: column;
+           margin-left: 50px;
+           margin-bottom: 20px
+           }
+
+.input-row{display: flex; }
+
+.container{margin-top: 80px; margin-bottom: 30px;}
+
+.shout{margin-left: 50px;}
+
+input{border: 1px solid #E5E7EB; border-radius: 2px}
+
+input:invalid{border: 1px solid red}
+
+label{font-size: 14px;}
+
+button{width: 150px; margin-left: 50px; background-color: #596D48; color: white; appearance: none; box-shadow: none; height: 40px}
+
+.quoat{margin-left: 50px;}
+
+.log-in{margin-left: 50px;}

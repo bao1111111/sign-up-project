@@ -14,44 +14,54 @@
 
     <div class="content">
       <div class="top-text">
-        <h2></h2>
-        <h2>h</h2>
+        <h2 class="quoat"></h2>
+        <h2 class="quoat">h</h2>
       </div>
      <div class="container">
        <form action=""></form>
        
-        <h2>Let's do this!</h2>
+        <h2 class="shout">Let's do this!</h2>
        <div class="allinputs">
          <div class="input-row">
           <div class="sole-input">
            <label for="first-name">FIRST NAME</label>
-           <input type="text" id="first-name" name="1-name" >
+           <input type="text" id="first-name" name="1-name" required>
           </div>
           <div class="sole-input"> 
            <label for="email">EMAIL</label>
-           <input type="email" id="email" name="mail">
+           <input type="email" id="email" name="mail" required>
           </div>
          </div>
 
+         <div class="input-row">
+          <div class="sole-input">
            <label for="password">PASSWORD</label>
-           <input type="password" id="password" name="code">
-       
-
+           <input type="password" id="password" name="code" required>
+          </div>
+          <div class="sole-input">
            <label for="last-name">LAST NAME</label>
-           <input type="text" id="last-name" name="2-name">
+           <input type="text" id="last-name" name="2-name" required>
+          </div>
+         </div>
 
+         <div class="input-row">
+          <div class="sole-input">
            <label for="phone-number">PHONE NUMBER</label>
-           <input type="tel" id="phone-number" name="number">
-
+           <input type="tel" id="phone-number" name="number" required>
+          </div>
+          <div class="sole-input">
            <label for="password-ver">CONFIRM PASSWORD</label>
-           <input type="password" id="password-ver" name="password-2">
-
+           <input type="password" id="password-ver" name="password-2" required>
+          </div>
+         </div>
         </div>
      
     </div>
     
     <button type="submit">Create Account</button>
 
+  <div class="log-in">
     <p>Already have an account? <a href="?">Log in</a></p>
+  </div>
 </body>
 </html>
