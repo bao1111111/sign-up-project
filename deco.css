@@ -1,3 +1,6 @@
+
+
+
 @font-face {
      font-family: 'Norse';
      src: url('assets/Norse-Bold.otf') format('opentype');
@@ -19,6 +22,8 @@ body{display: flex;
 .content{display: flex;
          flex-direction: column;
          flex: 2;
+         background-color:whitesmoke;
+         height: 100vh;
 }
 
 .allinputs{display: flex;
@@ -34,7 +39,7 @@ body{display: flex;
 
 .input-row{display: flex; }
 
-.container{margin-top: 80px; margin-bottom: 30px;}
+.container{margin-top: 30px; margin-bottom: 30px; font-family: 'Courier New', Courier, monospace; background-color:white;}
 
 .shout{margin-left: 50px;}
 
@@ -44,8 +49,21 @@ input:invalid{border: 1px solid red}
 
 label{font-size: 14px;}
 
-button{width: 150px; margin-left: 50px; background-color: #596D48; color: white; appearance: none; box-shadow: none; height: 40px}
+button{ margin-left: 50px;
+        background-color: #596D48;
+        color: white;
+        border-style: outset;
+        height: 40px;
+        width: 200px;
+        font: bold 15px arial,sans-serif;
+        text-shadow: none;
+        border-radius: 5px;
+     }
 
-.quoat{margin-left: 50px;}
+.quoat{margin-left: 50px; font-weight: bold; font-size: 20px; font-family: "Courier New", Courier, monospace;}
 
 .log-in{margin-left: 50px;}
+
+.top-text{width: 40vw; margin-top: 5vh;}
+
+.account{font-family: "Courier New", Courier, monospace;}
