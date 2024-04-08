@@ -1,9 +1,13 @@
 
+img{background-color: black; width: 4vw; height: 10vh}
 
+.odin-box{display: flex;}
+
+.odin{font-style: 'Norse', Courier, monospace}
 
 @font-face {
      font-family: 'Norse';
-     src: url('assets/Norse-Bold.otf') format('opentype');
+     src: url('Norse-Bold.otf') format('opentype');
  }
 
 
@@ -14,10 +18,12 @@ body{display: flex;
 .background{display: flex;
             flex-direction: column;
             flex:1;
-            background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+            
             background-size: 100%;
-          
+            z-index: -1;
 }
+
+.odin-box{margin: 10vh auto}
 
 .content{display: flex;
          flex-direction: column;
