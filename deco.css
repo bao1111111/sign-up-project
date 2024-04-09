@@ -1,13 +1,15 @@
 
-img{background-color: black; width: 4vw; height: 10vh}
+img{width: 4vw; height: 10vh; }
 
-.odin-box{display: flex;}
+.odin-box{display: flex; background-color: black; width: 100%; justify-content: center; opacity: 0.7;}
 
-.odin{font-style: 'Norse', Courier, monospace}
+.odin{font-family: 'Norse'; color: white; font-size: 40px;}
+
+.props{margin: 10vh auto}
 
 @font-face {
      font-family: 'Norse';
-     src: url('Norse-Bold.otf') format('opentype');
+     src: url('/home/bao/Downloads/Norse-Bold.otf')
  }
 
 
@@ -18,7 +20,7 @@ body{display: flex;
 .background{display: flex;
             flex-direction: column;
             flex:1;
-            
+            background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D://www.creativefabrica.com/wp-content/uploads/2023/09/05/Nature-wallpaper-Graphics-78543985-1-1-580x387.jpg");
             background-size: 100%;
             z-index: -1;
 }
