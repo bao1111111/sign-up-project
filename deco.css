@@ -1,11 +1,12 @@
 
-img{width: 4vw; height: 10vh; }
+img{width: 6vw; height: 15vh; align-self: center;}
 
-.odin-box{display: flex; background-color: black; width: 100%; justify-content: center; opacity: 0.7;}
+.odin-box{display: flex; background-color: black; width: 100%; justify-content: center; background-color: rgba(0,0,0,.5);
+     color: #fff; margin-top: 4vh;}
 
-.odin{font-family: 'Norse'; color: white; font-size: 40px;}
+.odin{font-family: 'Norse'; font-size:80px; align-self: center;}
 
-.props{margin: 10vh auto}
+.props{margin: 10vh auto; z-index: 1; color: white; margin-top: auto; font-family: "Norse"; font-size: 30px;}
 
 @font-face {
      font-family: 'Norse';
@@ -32,6 +33,7 @@ body{display: flex;
          flex: 2;
          background-color:whitesmoke;
          height: 100vh;
+         justify-content: center;
 }
 
 .allinputs{display: flex;
@@ -51,7 +53,7 @@ body{display: flex;
 
 .shout{margin-left: 50px;}
 
-input{border: 1px solid #E5E7EB; border-radius: 2px}
+input{border: 1px solid #E5E7EB; border-radius: 2px; width: 10vw}
 
 input:invalid{border: 1px solid red}
 
@@ -70,8 +72,10 @@ button{ margin-left: 50px;
 
 .quoat{margin-left: 50px; font-weight: bold; font-size: 20px; font-family: "Courier New", Courier, monospace;}
 
-.log-in{margin-left: 50px;}
+.log-in{margin-left: 50px; margin-top: 20px}
 
-.top-text{width: 40vw; margin-top: 5vh;}
+.top-text{width: 40vw;}
 
 .account{font-family: "Courier New", Courier, monospace;}
+
+.link{text-decoration: none; color: #596D48}
