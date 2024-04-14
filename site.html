@@ -21,7 +21,7 @@
         <p class="quoat">You know you want to</p>
       </div>
      <div class="container">
-       <form action= "?" id="signupForm"></form>
+       <form action= "?" id="signupForm" onsubmit="return Validation()"></form>
        
         <h2 class="shout">Let's do this!</h2>
        <div class="allinputs">
@@ -43,7 +43,7 @@
            </div>
           <div class="sole-input">
             <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" id="phone-number" name="number" required>
+            <input type="tel" id="phone-number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
            </div>
          </div>
 
@@ -54,7 +54,7 @@
            </div>
           <div class="sole-input">
            <label for="password-ver">CONFIRM PASSWORD</label>
-           <input type="password" id="password-ver" name="password-2" required>
+           <input type="password" id="passwordVer" name="password-2" required>
           </div>
          </div>
         </div>
@@ -67,18 +67,23 @@
     <p class="account">Already have an account? <a href="?" class="link">Log in</a></p>
   </div>
 
+  
   <script>
-  document.getElementById('signupForm').addEventListener('submit', function(event) {
-        let password = document.getElementById('password').value;
-        let confirmPassword = document.getElementById('password-ver').value;
+  function Validation(){
 
-        if (password !== confirmPassword) {
-            alert('Passwords do not match!');
-            event.preventDefault(); 
-        } else {
-            document.getElementById('signupForm').reset();
-        }
-    });
+    let password1 = document.getElementById("password").value
+    let passwordConfirmation = document.getElementById("passwordVer").value
+
+
+  if(password1 != passwordConfirmation) {  
+      document.getElementById("password").innerHTML = "**Passwords are not same";  
+      return false;  
+    } else {  
+      alert ("Your password created successfully");  
+      document.write("JavaScript form has been submitted successfully");  
+    }  
+ }  
+
   </script>
 
 </body>
